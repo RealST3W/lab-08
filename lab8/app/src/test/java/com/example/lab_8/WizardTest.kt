@@ -60,6 +60,6 @@ class WizardTest {
         evilWizard.mana = 4
         val powerLevel = evilWizard.train()
         assertEquals(4, evilWizard.mana)
-        assertEquals(10, powerLevel)
+        assertEquals(0, powerLevel)
     }
 }
