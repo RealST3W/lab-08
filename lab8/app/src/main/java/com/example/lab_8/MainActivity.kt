@@ -21,6 +21,7 @@ class MainActivity : ComponentActivity() {
             Lab8Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
+                        // Comment I was supposed to add
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
