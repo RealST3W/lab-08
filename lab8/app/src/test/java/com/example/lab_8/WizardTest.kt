@@ -49,13 +49,17 @@ class WizardTest {
 
     @Test
     fun train_haveAtleast5Mana(){
-        evilWizard.mana = 5
+        evilWizard.mana = 10
+        val powerLevel = evilWizard.train()
         assertEquals(5, evilWizard.mana)
+        assertEquals(11, powerLevel)
     }
 
     @Test
     fun train_doesNotHaveAtleast5Mana(){
         evilWizard.mana = 4
-        assertEquals(5, evilWizard.mana)
+        val powerLevel = evilWizard.train()
+        assertEquals(4, evilWizard.mana)
+        assertEquals(10, powerLevel)
     }
 }
